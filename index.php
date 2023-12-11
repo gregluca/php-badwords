@@ -1,9 +1,6 @@
 <?php 
-echo "hello";
-echo "ciao";
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +10,19 @@ echo "ciao";
     <title>Document</title>
 </head>
 <body>
-    <h2>ciao</h2>
-    <form action="">
-        <label for=""></label>
-        <input type="text">
-    </form>
+
+<form action="censur.php">
+
+    <!-- paragrafo -->
+    <label for="paragraph">Scrivi il tuo paragrafo</label>
+    <input type="text" id="paragraph" name="paragraph">
+
+    <!-- censurare -->
+    <label for="censur">Scrivi la parola che vuoi censurare</label>
+    <input type="text" id="censur" name="censur">
+    <button type="submit">Censura</button>
+</form>
+
+
 </body>
 </html>
